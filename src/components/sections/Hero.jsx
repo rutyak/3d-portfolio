@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../images/HeroImage.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -178,12 +177,10 @@ const ResumeButton = styled.a`
 `;
 
 const Img = styled.img`
-  border-radius: 50%;
   width: 100%;
   height: 100%;
   max-width: 400px;
   max-height: 400px;
-  border: 2px solid ${({ theme }) => theme.primary};
 
   @media (max-width: 640px) {
     max-width: 280px;
@@ -220,7 +217,7 @@ const Hero = () => {
     <div id="About">
       <HeroContainer>
         <HeroBg>
-          {/* <StarCanvas /> */}
+          <StarCanvas />
           <HeroBgAnimation />
         </HeroBg>
 
@@ -256,7 +253,7 @@ const Hero = () => {
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
-                  <Img src={HeroImg} alt="Rishav Chanda" />
+                  <Img src="https://juanmolina.org/assets/img/avataaars.svg" alt="Rutik khandekar" />
                 </Tilt>
               </motion.div>
             </HeroRightContainer>
