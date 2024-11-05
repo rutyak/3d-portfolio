@@ -14,12 +14,14 @@ const Card = styled.div`
   flex-direction: column;
   gap: 14px;
   transition: all 0.5s ease-in-out;
+
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
 `;
+
 const Image = styled.img`
   width: 100%;
   height: 180px;
@@ -27,6 +29,7 @@ const Image = styled.img`
   border-radius: 10px;
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
+
 const Tags = styled.div`
   width: 100%;
   display: flex;
@@ -35,6 +38,7 @@ const Tags = styled.div`
   gap: 8px;
   margin-top: 4px;
 `;
+
 const Details = styled.div`
   width: 100%;
   display: flex;
@@ -42,7 +46,8 @@ const Details = styled.div`
   gap: 0px;
   padding: 0px 2px;
 `;
-const Title = styled.div`
+
+const Title = styled.a`
   font-size: 20px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_secondary};
@@ -51,18 +56,20 @@ const Title = styled.div`
   max-width: 100%;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  overflow: hidden;
   text-overflow: ellipsis;
 `;
+
 const Date = styled.div`
   font-size: 12px;
   margin-left: 2px;
   font-weight: 400;
   color: ${({ theme }) => theme.text_secondary + 80};
+
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }
 `;
+
 const Description = styled.div`
   font-weight: 400;
   color: ${({ theme }) => theme.text_secondary + 99};
@@ -74,11 +81,13 @@ const Description = styled.div`
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 `;
+
 const Members = styled.div`
   display: flex;
   align-items: center;
   padding-left: 10px;
 `;
+
 const Avatar = styled.img`
   width: 38px;
   height: 38px;
@@ -88,6 +97,7 @@ const Avatar = styled.img`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid ${({ theme }) => theme.card};
 `;
+
 const Button = styled.a`
   color: ${({ theme }) => theme.primary};
   text-decoration: none;
@@ -95,22 +105,49 @@ const Button = styled.a`
   text-align: center;
 `;
 
+const Skills = styled.div`
+  display: flex;
+  flex-wrap: wrap; /* Allow skills to wrap if they exceed the width */
+  gap: 8px; /* Space between each skill */
+  margin-top: 8px; /* Add some spacing above the skills */
+`;
+
+const SkillTag = styled.span`
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+`;
+
 const ProjectCard = ({ project }) => {
+
+  console.log("project : ", project);
+
   return (
     <Card>
-      <Image src={project.image} />
-      <Tags></Tags>
+      <a href={project.webapp} target="_blank" rel="noopener noreferrer">
+        <Image src={project.image} alt={project.title} />
+      </a>
       <Details>
-        <Title>{project.title}</Title>
+        <Title href={project.webapp} target="_blank" rel="noopener noreferrer">
+          {project.title}
+        </Title>
         <Date>{project.date}</Date>
+        <Skills>
+          {project.tags.map((tag, index) => (
+            <SkillTag key={index}>{tag}</SkillTag>
+          ))}
+        </Skills>
         <Description>{project.description}</Description>
       </Details>
       <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
+        {project.member?.map((member, index) => (
+          <Avatar key={index} src={member.img} alt={`Avatar of ${member.name}`} />
         ))}
       </Members>
-      <Button href={project.github} target="_blank">
+      <Button href={project.github} target="_blank" rel="noopener noreferrer">
         View Code
       </Button>
     </Card>

@@ -1,4 +1,7 @@
 import gpwImage from "../images/image.png";
+import foodAppImage from "../images/food-delivary-app.png";
+import shoppingApp from "../images/shopping-app.png";
+import schoolApp from "../images/school-management-app.png";
 
 export const Bio = {
   name: "Rutik khandekar",
@@ -120,7 +123,7 @@ export const experiences = [
     id: 0,
     img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAe1BMVEVHcEwUxNEUw9MUxNEo1L0MvdkVxNAMvtk/5qY+5qc85Kk336403bEx27Mv2bYp1bws1rki0MIn0r4n074jz8Idy8gbycoWxc8Tw9EUxNEKvdoJu9sFud8q1bwDt+E64qsgzcUaycsZx8wHut4Fud823q8Zx8w95Kg44K241GKLAAAAKXRSTlMANxEu935L63z/xEvf/Mpo/6PUuZT/1vHj/8Ba2BvxZN+PsGj/wazvrn7cScMAAAB8SURBVHgB7MwzAgMBAETRv7Zt4/4XjJ0udV474O83gijxSuaFomqc6YZp2Y7r+UEYxUGSilleCGVVNy00RncKcRof2RN6hrFA0sqpncVzaNIt2NIpFNVTuF7DuZ4Ac9utHbdxo1DkdNsUeSGVVUkr8kUsjsPnDWaiPTwKAOKlB4nkTTN1AAAAAElFTkSuQmCC",
     role: "Frontend Developer Intern",
-    company: "Neurobit",
+    company: "Entropik",
     date: "Nov 2023 - May 2024",
     desc: "Developed responsive designs to ensure compatibility across various devices and screen sizes. Contributed key parts ofthe application, resolved numerous bugs, and wrote comprehensive test cases to enhance code quality.Actively participated in meetings focused on bug resolution, collaborating closely with testers and design teams.Familiar with ReactJS, Automation Testing, SCSS, Chakra UI, and IDEs such as Visual Studio Code.",
     skills: [
@@ -164,8 +167,7 @@ export const projects = [
     date: "Jan 2024 - Feb 2024",
     description:
       "Developed a responsive app featuring integrated infinite scrolling, robust search and filter functionalities, and geolocation capabilities. Implemented a shimmer effect to enhance the user experience during data loading. Wrote comprehensive test cases to ensure the reliability and functionality of the application.",
-    image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
+    image: foodAppImage,
     tags: [
       "React Js",
       "Redux",
@@ -203,8 +205,7 @@ export const projects = [
     date: "May 2024 - June 2024",
     description:
       "Implemented CRUD operations with reusable forms and tables for managing classes, teachers, and students. Created detailed analytics pages with graphs and toggles for monthly/yearly data views. Added secure login/signup authentication and enhanced data handling with filtering, sorting, and form validation.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+    image: schoolApp,
     tags: ["React Js", "Tailwind", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "full stack app",
     github: "https://github.com/rutyak/school-management-app.git",
@@ -213,17 +214,35 @@ export const projects = [
   {
     id: 1,
     title: "Shopping Application",
-    date: "Oct 2023 - Nov 2023",
+    date: "Oct 2022 - Nov 2022",
     description:
       "Retrieved data from an API to populate the application with dynamic content. Implemented user login authentication to secure user access. Added search functionality to allow users to find products easily.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    image: shoppingApp,
     tags: [
        "HTML",
        "CSS",
        "JavaScript"
     ],
     category: "frontend app",
+    github: "https://github.com/rutyak/shopping-app",
+    webapp: "https://rutyak.github.io/shopping-app/",
+  },
+  {
+    id: 1,
+    title: "Todo App",
+    date: "Oct 2023 - Nov 2023",
+    description:
+      "Retrieved data from an API to populate the application with dynamic content. Implemented user login authentication to secure user access. Added search functionality to allow users to find products easily.",
+    image: shoppingApp,
+    tags: [
+       "HTML",
+       "CSS",
+       "JavaScript",
+       "NodeJs",
+       "MongoDB",
+       "Express"
+    ],
+    category: "full stack app",
     github: "https://github.com/rutyak/shopping-app",
     webapp: "https://rutyak.github.io/shopping-app/",
   },
