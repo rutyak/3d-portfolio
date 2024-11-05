@@ -2,6 +2,7 @@ import gpwImage from "../images/image.png";
 import foodAppImage from "../images/food-delivary-app.png";
 import shoppingApp from "../images/shopping-app.png";
 import schoolApp from "../images/school-management-app.png";
+import todoApp from "../images/todo-app.png"
 
 export const Bio = {
   name: "Rutik khandekar",
@@ -196,8 +197,8 @@ export const projects = [
       "Redux",
     ],
     category: "full stack app",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify-management.netlify.app/",
+    github: "https://github.com/rutyak/Podcast.git",
+    webapp: "",
   },
   {
     id: 0,
@@ -233,7 +234,7 @@ export const projects = [
     date: "Oct 2023 - Nov 2023",
     description:
       "Retrieved data from an API to populate the application with dynamic content. Implemented user login authentication to secure user access. Added search functionality to allow users to find products easily.",
-    image: shoppingApp,
+    image: todoApp,
     tags: [
        "HTML",
        "CSS",
@@ -243,8 +244,8 @@ export const projects = [
        "Express"
     ],
     category: "full stack app",
-    github: "https://github.com/rutyak/shopping-app",
-    webapp: "https://rutyak.github.io/shopping-app/",
+    github: "https://github.com/rutyak/todo-app",
+    webapp: "https://rutyak.github.io/todo-app/",
   },
 ];
 
