@@ -253,7 +253,7 @@ const Hero = () => {
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
-                  <Img src="https://juanmolina.org/assets/img/avataaars.svg" alt="Rutik khandekar" />
+                  <Img src="https://thumbs.dreamstime.com/b/student-avatar-ill…outh-simple-cartoon-portrait-vector-276205499.jpg" alt="Rutik khandekar" />
                 </Tilt>
               </motion.div>
             </HeroRightContainer>
