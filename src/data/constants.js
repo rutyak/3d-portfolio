@@ -3,6 +3,7 @@ import foodAppImage from "../images/food-delivary-app.png";
 import shoppingApp from "../images/shopping-app.png";
 import schoolApp from "../images/school-management-app.png";
 import todoApp from "../images/todo-app.png"
+import podcastPlatform from "../images/podcast-platform.png";
 
 export const Bio = {
   name: "Rutik khandekar",
@@ -187,13 +188,11 @@ export const projects = [
     date: "Jun 2023 - Jul 2023",
     description:
       "Podcast ... description",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    image: podcastPlatform,
     tags: [
+      "HTML",
+      "CSS",
       "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
       "Redux",
     ],
     category: "full stack app",
@@ -244,7 +243,7 @@ export const projects = [
        "Express"
     ],
     category: "full stack app",
-    github: "https://github.com/rutyak/todo-app",
+    github: "https://github.com/rutyak/todo-app/welcome",
     webapp: "https://rutyak.github.io/todo-app/",
   },
 ];
