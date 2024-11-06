@@ -187,7 +187,7 @@ export const projects = [
     title: "Podcast Platform Application",
     date: "Jun 2023 - Jul 2023",
     description:
-      "Podcast ... description",
+      "Podcast platform is a fully responsive where users can log in, upload their podcasts, and explore content from others with ease. It features a user-friendly interface, intuitive navigation, and optimized playback for seamless listening on any device. Discover and enjoy diverse podcasts in one engaging platform.",
     image: podcastPlatform,
     tags: [
       "HTML",
@@ -232,7 +232,7 @@ export const projects = [
     title: "Todo App",
     date: "Oct 2023 - Nov 2023",
     description:
-      "Retrieved data from an API to populate the application with dynamic content. Implemented user login authentication to secure user access. Added search functionality to allow users to find products easily.",
+      "A dynamic To-Do List app where users can log in, add daily tasks, and track progress through a drag-and-drop interface. Easily search and filter tasks to stay organized and boost productivity. Perfect for managing and prioritizing tasks in one convenient place.",
     image: todoApp,
     tags: [
        "HTML",
