@@ -1,24 +1,21 @@
+const webpack = require('webpack');
+
 module.exports = {
-    module: {
-      rules: [
-        {
-          test: /\.mjs$/,
-          enforce: 'pre',
-          use: [
-            {
-              loader: 'source-map-loader',
-              options: {
-                filterSourceMappingUrl: (url, resourcePath) => {
-                  return (
-                    !/node_modules/.test(resourcePath) || !/vision_bundle\.mjs$/.test(resourcePath)
-                  );
-                },
-              },
-            },
-          ],
-          exclude: /node_modules/,
-        },
-      ],
-    },
-  };
-  
+  // other configurations
+  devtool: 'source-map',
+  module: {
+    rules: [
+      {
+        test: /\.mjs$/,
+        enforce: 'pre',
+        use: ['source-map-loader'],
+        exclude: [/node_modules\/@mediapipe\/tasks-vision/],
+      },
+    ],
+  },
+  plugins: [
+    new webpack.IgnorePlugin({
+      resourceRegExp: /vision_bundle_mjs\.js\.map/,
+    }),
+  ],
+};

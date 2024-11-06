@@ -31,15 +31,6 @@ const Image = styled.img`
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
 
-const Tags = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-`;
-
 const Details = styled.div`
   width: 100%;
   display: flex;
