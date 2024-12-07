@@ -197,7 +197,7 @@ export const projects = [
     ],
     category: "full stack app",
     github: "https://github.com/rutyak/Podcast.git",
-    webapp: "",
+    webapp: "https://adorable-biscuit-7b9d8f.netlify.app/",
   },
   {
     id: 0,
@@ -225,11 +225,11 @@ export const projects = [
     ],
     category: "frontend app",
     github: "https://github.com/rutyak/shopping-app",
-    webapp: "https://rutyak.github.io/shopping-app/",
+    webapp: "https://sage-babka-bf65bf.netlify.app/index.html",
   },
   {
     id: 1,
-    title: "Todo App",
+    title: "Task Tracker App",
     date: "Oct 2023 - Nov 2023",
     description:
       "A dynamic To-Do List app where users can log in, add daily tasks, and track progress through a drag-and-drop interface. Easily search and filter tasks to stay organized and boost productivity. Perfect for managing and prioritizing tasks in one convenient place.",
@@ -244,7 +244,7 @@ export const projects = [
     ],
     category: "full stack app",
     github: "https://github.com/rutyak/todo-app/welcome",
-    webapp: "https://rutyak.github.io/todo-app/",
+    webapp: "https://resonant-concha-14854e.netlify.app/welcome/welcome",
   },
 ];
 
