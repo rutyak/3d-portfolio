@@ -180,7 +180,7 @@ export const projects = [
     ],
     category: "frontend app",
     github: "https://github.com/rutyak/food-delivery-app.git",
-    webapp: "https://fastidious-kitsune-9b0fd6.netlify.app/",
+    webapp: "https://food-delivery-application-new.netlify.app/",
   },
   {
     id: 9,
