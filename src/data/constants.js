@@ -17,9 +17,9 @@ export const Bio = {
     "Building Solutions, One Line at a Time | A passionate MERN stack developer, excited to craft meaningful web experiences with a focus on learning and growth.",
   github: "https://github.com/rutyak",
   resume:
-    "https://drive.google.com/file/d/1PCAeUqxZPHGwOcVHJBvYTFiVE8FQEgMM/view?usp=sharing",
-  linkedin: "https://www.linkedin.com/in/rutik-khandekar/",
-  insta: "https://www.instagram.com/_rutyaaaaa.__",
+    "https://drive.google.com/file/d/1WyOpCbwODL-sukoJDQXfKQoON0q9D2ZT/view?usp=sharing",
+  linkedin: "https://www.linkedin.com/in/rutik-khandekar",
+  insta: "https://www.instagram.com",
 };
 
 export const skills = [
@@ -180,7 +180,7 @@ export const projects = [
     ],
     category: "frontend app",
     github: "https://github.com/rutyak/food-delivery-app.git",
-    webapp: "https://food-delivery-application-new.netlify.app/",
+    webapp: "https://new-food-delivery-application.netlify.app",
   },
   {
     id: 9,
@@ -209,7 +209,7 @@ export const projects = [
     tags: ["React Js", "Tailwind", "MongoDb", "Node Js", "Express Js", "Redux"],
     category: "full stack app",
     github: "https://github.com/rutyak/school-management-app.git",
-    webapp: "https://school-app-234.netlify.app/",
+    webapp: "https://school-app-234.netlify.app",
   },
   {
     id: 1,
